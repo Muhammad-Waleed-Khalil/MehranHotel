@@ -31,7 +31,7 @@ const Footer = () => {
           >
             <div className="flex items-center gap-4 mb-6">
               <div className="relative">
-                <img src={logo} alt="Mehran Hotel" className="h-16 w-auto" />
+                <img src="/logo.png" alt="Mehran Hotel" className="h-16 w-auto" />
                 <div className="absolute inset-0 bg-gold/20 rounded-full blur-lg opacity-50" />
               </div>
               <span className="font-serif text-3xl font-bold text-luxury-white gold-glow">

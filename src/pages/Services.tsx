@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Hotel, Utensils, Users, Clock, Car } from "lucide-react";
 import Hero from "@/components/Hero";
 import ServiceCard from "@/components/ServiceCard";
+import PremiumRoomsSection from "@/components/PremiumRoomsSection";
 import SEO from "@/components/SEO";
 import { pageSEO } from "@/lib/seo";
 import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/structured-data";
@@ -90,8 +91,11 @@ const Services = () => {
         backgroundImage={premium}
       />
 
+      {/* Premium Rooms Section */}
+      <PremiumRoomsSection />
+
       {/* Services Grid */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-card">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -124,7 +128,7 @@ const Services = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-card">
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -161,7 +165,7 @@ const Services = () => {
       </section>
 
       {/* Price Range Section */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-card">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

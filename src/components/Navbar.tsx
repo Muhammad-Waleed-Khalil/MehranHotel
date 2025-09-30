@@ -88,10 +88,10 @@ const Navbar = () => {
               >
                 <Link
                   to={link.path}
-                  className={`relative font-medium transition-all duration-400 ease-out group uppercase tracking-wider text-sm ${
+                  className={`relative font-medium transition-all duration-400 ease-out group uppercase tracking-wider text-sm px-4 py-2 rounded-lg border ${
                     location.pathname === link.path
-                      ? "text-gold gold-glow"
-                      : "text-navy-deep hover:text-gold"
+                      ? "text-gold gold-glow border-gold/40 bg-gold/5"
+                      : "text-navy-deep hover:text-gold border-transparent hover:border-gold/30 hover:bg-gold/5"
                   }`}
                 >
                   <span className="relative z-10">{link.name}</span>
@@ -107,7 +107,7 @@ const Navbar = () => {
                   />
                   
                   {/* Background Glow on Hover */}
-                      <div className="absolute inset-0 bg-gold/10 rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-400 ease-out -m-2" />
+                      <div className="absolute inset-0 bg-gold/10 rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-400 ease-out" />
                 </Link>
               </motion.div>
             ))}
@@ -152,10 +152,10 @@ const Navbar = () => {
                       <Link
                         to={link.path}
                         onClick={() => setIsOpen(false)}
-                        className={`block font-medium transition-all duration-500 ease-out py-3 px-4 rounded-xl uppercase tracking-wider text-sm group ${
+                        className={`block font-medium transition-all duration-500 ease-out py-3 px-4 rounded-xl uppercase tracking-wider text-sm group border ${
                           location.pathname === link.path
-                            ? "text-gold gold-glow bg-gold/10"
-                            : "text-navy-deep hover:text-gold hover:bg-gold/5"
+                            ? "text-gold gold-glow bg-gold/10 border-gold/40"
+                            : "text-navy-deep hover:text-gold hover:bg-gold/5 border-transparent hover:border-gold/30"
                         }`}
                       >
                         <span className="relative z-10">{link.name}</span>

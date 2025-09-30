@@ -9,7 +9,6 @@ import mainlobby from "@/assets/mainlobby.jpg";
 import thirdfloor from "@/assets/3rdfloor.jpg";
 
 const About = () => {
-
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -44,6 +43,27 @@ const About = () => {
       icon: MapPin,
       title: "Prime Location",
       description: "Strategically located in the heart of Peshawar for easy access to the city's attractions."
+    }
+  ];
+
+  const suites = [
+    {
+      title: "Luxurious Suite",
+      description: "Luxurious Premium Suite with elegant furnishings and marble accents",
+      subtitle: "Experience luxury redefined",
+      image: reception // Assuming reception image for Luxurious Suite
+    },
+    {
+      title: "Spacious Suite",
+      description: "Spacious Four-Bedroom Family Suite with panoramic city views",
+      subtitle: "Experience luxury redefined",
+      image: thirdfloor // Assuming thirdfloor image for Spacious Suite
+    },
+    {
+      title: "Executive Suite",
+      description: "Executive Two-Bedroom AC Suite with modern amenities",
+      subtitle: "Experience luxury redefined",
+      image: mainlobby // Assuming mainlobby image for Executive Suite
     }
   ];
 
@@ -114,6 +134,96 @@ const About = () => {
                 />
               </div>
             </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Suites Section */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-16"
+          >
+            <h2 className="font-serif text-4xl md:text-5xl font-bold mb-4 text-luxury-white">
+              Our <span className="text-luxury gold-glow">Luxury Suites</span>
+            </h2>
+            <p className="text-cream text-lg max-w-2xl mx-auto">
+              Immerse yourself in opulent accommodations designed for the discerning traveler
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {/* First two cards side by side */}
+            {suites.slice(0, 2).map((suite, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.2 }}
+                className="glass rounded-2xl p-8 text-center group hover:border-gold transition-all duration-300 relative"
+              >
+                <OptimizedImage
+                  src={suite.image}
+                  alt={`${suite.title} - Elegant room design`}
+                  width={400}
+                  height={256}
+                  className="rounded-t-2xl w-full h-64 object-cover absolute inset-0 -z-10"
+                  priority={index === 0}
+                  loading={index === 0 ? "eager" : "lazy"}
+                  sizes="(max-width: 768px) 50vw, 25vw"
+                />
+                <div className="relative z-10">
+                  <h3 className="font-serif text-2xl font-semibold mb-4 text-luxury-white group-hover:text-luxury group-hover:gold-glow transition-all duration-300">
+                    {suite.title}
+                  </h3>
+                  <p className="text-cream-dark text-lg mb-4 leading-relaxed">
+                    {suite.description}
+                  </p>
+                  <p className="text-cream font-semibold">
+                    {suite.subtitle}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+          {/* Third card full width */}
+          <div className="mt-8 w-full">
+            {suites.slice(2).map((suite, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: (index + 2) * 0.2 }}
+                className="glass rounded-2xl p-8 text-center group hover:border-gold transition-all duration-300 relative w-full"
+              >
+                <OptimizedImage
+                  src={suite.image}
+                  alt={`${suite.title} - Elegant room design`}
+                  width={800}
+                  height={400}
+                  className="rounded-t-2xl w-full h-64 object-cover absolute inset-0 -z-10"
+                  loading="lazy"
+                  sizes="100vw"
+                />
+                <div className="relative z-10">
+                  <h3 className="font-serif text-2xl font-semibold mb-4 text-luxury-white group-hover:text-luxury group-hover:gold-glow transition-all duration-300">
+                    {suite.title}
+                  </h3>
+                  <p className="text-cream-dark text-lg mb-4 leading-relaxed">
+                    {suite.description}
+                  </p>
+                  <p className="text-cream font-semibold">
+                    {suite.subtitle}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
