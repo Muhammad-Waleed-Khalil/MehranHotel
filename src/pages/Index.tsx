@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Hotel, Utensils, Users, Clock, Car } from "lucide-react";
 import Hero from "@/components/Hero";
@@ -16,7 +15,6 @@ import fourbedroom from "@/assets/fourbedroom.jpg";
 import twobedAc from "@/assets/twobedAc.jpg";
 
 const Index = () => {
-
   const hotelSchema = generateHotelSchema();
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", url: "https://www.hotelmehran.com/" }
@@ -118,10 +116,10 @@ const Index = () => {
         
         <div className="container mx-auto px-6 relative z-10">
           <motion.div
-                initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-                transition={{ duration: 0.4, ease: [0.25, 0.46, 0.45, 0.94] }}
+            transition={{ duration: 0.4, ease: [0.25, 0.46, 0.45, 0.94] }}
             className="text-center mb-20"
           >
             <motion.h2 
@@ -129,7 +127,7 @@ const Index = () => {
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: 0.1 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
             >
               Why Choose <span className="text-luxury gold-glow">Mehran Hotel</span>
             </motion.h2>
@@ -149,10 +147,10 @@ const Index = () => {
             {highlights.map((highlight, index) => (
               <motion.div
                 key={index}
-                    initial={{ opacity: 0, y: 40, scale: 0.95 }}
-                    whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.4, delay: index * 0.08, ease: [0.25, 0.46, 0.45, 0.94] }}
+                initial={{ opacity: 0, y: 40, scale: 0.95 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: index * 0.08, ease: [0.25, 0.46, 0.45, 0.94] }}
                 className={`${index === 1 ? 'lg:col-span-1 lg:row-span-2' : ''}`}
               >
                 <ServiceCard
@@ -167,7 +165,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Enhanced Gallery Section with Curved Divider */}
+      {/* Enhanced Gallery Section with Modern Animated Layout */}
       <section className="py-40 bg-card relative overflow-hidden">
         {/* Enhanced Curved Divider */}
         <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-background to-card" 
@@ -182,10 +180,10 @@ const Index = () => {
         
         <div className="container mx-auto px-6 relative z-10">
           <motion.div
-                initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-                transition={{ duration: 0.4, ease: [0.25, 0.46, 0.45, 0.94] }}
+            transition={{ duration: 0.4, ease: [0.25, 0.46, 0.45, 0.94] }}
             className="text-center mb-20"
           >
             <motion.h2 
@@ -193,7 +191,7 @@ const Index = () => {
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: 0.1 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
             >
               Our <span className="text-luxury gold-glow">Luxury Suites</span>
             </motion.h2>
@@ -208,52 +206,43 @@ const Index = () => {
             </motion.p>
           </motion.div>
 
-          {/* Asymmetrical Gallery Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+          {/* Modern Animated Gallery Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 max-w-6xl mx-auto">
             {gallery.map((image, index) => (
               <motion.div
                 key={index}
-                    initial={{ opacity: 0, y: 40, scale: 0.95 }}
-                    whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.4, delay: index * 0.08, ease: [0.25, 0.46, 0.45, 0.94] }}
-                whileHover={{ y: -8, scale: 1.02 }}
-                className={`group relative overflow-hidden rounded-3xl ${
-                  index === 0 ? 'md:col-span-2 lg:col-span-1 lg:row-span-2' : 
-                  index === 1 ? 'lg:col-span-2' : ''
-                }`}
+                initial={{ opacity: 0, y: 30, scale: 0.95 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                whileHover={{ scale: 1.02, boxShadow: "0 10px 30px rgba(230, 184, 77, 0.3)" }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
+                className="relative glass rounded-2xl overflow-hidden group"
               >
-                <div className="relative h-80 lg:h-96 overflow-hidden">
+                <div className="relative w-full aspect-[3/2]">
                   <OptimizedImage
                     src={image.src}
                     alt={image.alt}
                     width={600}
                     height={400}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     priority={index === 0}
-                    loading={index === 0 ? 'eager' : 'lazy'}
+                    loading={index === 0 ? "eager" : "lazy"}
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
-                  
-                  {/* Multi-layer Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/95 via-navy-deep/60 to-transparent" />
-                  <div className="absolute inset-0 bg-gradient-to-br from-gold/20 via-transparent to-gold-metallic/10" />
-                  
-                  {/* Enhanced Content Overlay */}
-                  <div className="absolute inset-0 flex items-end p-8">
-                    <div className="glass-premium rounded-3xl p-8 border-luxury backdrop-blur-xl">
-                      <h3 className="font-serif text-3xl font-semibold text-luxury-white mb-3 gold-glow">
-                        {image.alt.split(' ')[0]} Suite
-                      </h3>
-                      <p className="text-cream text-base opacity-95 leading-relaxed">
-                        Experience luxury redefined
-                      </p>
-                    </div>
-                  </div>
-                  
-                  {/* Hover Glow Effect */}
-                  <div className="absolute inset-0 border border-gold/0 group-hover:border-gold/30 transition-all duration-500 rounded-3xl" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300" />
                 </div>
+                <div className="p-6 text-center relative z-10">
+                  <h3 className="font-serif text-2xl font-semibold mb-3 text-luxury-white group-hover:text-gold transition-colors duration-300">
+                    {image.alt.split(' ')[0]} Suite
+                  </h3>
+                  <p className="text-cream-dark text-base mb-3 leading-relaxed">
+                    {image.alt}
+                  </p>
+                  <p className="text-cream font-medium text-sm italic">
+                    Experience luxury redefined
+                  </p>
+                </div>
+                <div className="absolute inset-0 border border-gold/0 group-hover:border-gold/30 transition-all duration-500 rounded-2xl" />
               </motion.div>
             ))}
           </div>
@@ -271,10 +260,10 @@ const Index = () => {
         
         <div className="container mx-auto px-6 relative z-10">
           <motion.div
-                initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-                transition={{ duration: 0.4, ease: [0.25, 0.46, 0.45, 0.94] }}
+            transition={{ duration: 0.4, ease: [0.25, 0.46, 0.45, 0.94] }}
             className="text-center mb-20"
           >
             <motion.h2 
@@ -282,7 +271,7 @@ const Index = () => {
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: 0.1 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
             >
               Our <span className="text-luxury gold-glow">Exclusive Services</span>
             </motion.h2>
@@ -360,10 +349,10 @@ const Index = () => {
         
         <div className="container mx-auto px-6 relative z-10">
           <motion.div
-                initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-                transition={{ duration: 0.4, ease: [0.25, 0.46, 0.45, 0.94] }}
+            transition={{ duration: 0.4, ease: [0.25, 0.46, 0.45, 0.94] }}
             className="text-center mb-20"
           >
             <motion.h2 
@@ -371,7 +360,7 @@ const Index = () => {
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: 0.1 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
             >
               Our <span className="text-luxury gold-glow">Luxury Rooms</span>
             </motion.h2>
@@ -380,7 +369,7 @@ const Index = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-                  transition={{ duration: 0.4, delay: 0.3 }}
+              transition={{ duration: 0.4, delay: 0.3 }}
             >
               Experience unparalleled comfort and luxury in our elegantly appointed accommodations
             </motion.p>
@@ -414,7 +403,7 @@ const Index = () => {
 
           {/* Special Offer Banner */}
           <motion.div
-                initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.6 }}

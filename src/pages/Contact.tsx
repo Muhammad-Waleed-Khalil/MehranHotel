@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { MapPin, Phone, Mail, DollarSign } from "lucide-react";
 import Hero from "@/components/Hero";
-import ContactForm from "@/components/ContactForm";
 import MapEmbed from "@/components/MapEmbed";
 import SocialLinks from "@/components/SocialLinks";
 import SEO from "@/components/SEO";
@@ -9,7 +8,6 @@ import { pageSEO } from "@/lib/seo";
 import reception from "@/assets/reception.jpg";
 
 const Contact = () => {
-
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -40,7 +38,6 @@ const Contact = () => {
       icon: Phone,
       title: "Phone",
       content: "+92-21-1234567",
-      note: "*Please verify local Peshawar number",
       link: "tel:+922112345467"
     },
     {
@@ -116,11 +113,6 @@ const Contact = () => {
                         ) : (
                           <p className="text-gold gold-glow font-semibold">{info.content}</p>
                         )}
-                        {info.note && (
-                          <p className="text-xs italic text-muted-foreground mt-1">
-                            {info.note}
-                          </p>
-                        )}
                       </div>
                     </div>
                   </motion.div>
@@ -134,7 +126,7 @@ const Contact = () => {
             </motion.div>
 
             {/* Contact Form */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -145,7 +137,7 @@ const Contact = () => {
                 Send us a <span className="text-luxury gold-glow">Message</span>
               </h3>
               <ContactForm />
-            </motion.div>
+            </motion.div> */}
           </div>
         </div>
       </section>

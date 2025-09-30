@@ -51,19 +51,19 @@ const About = () => {
       title: "Luxurious Suite",
       description: "Luxurious Premium Suite with elegant furnishings and marble accents",
       subtitle: "Experience luxury redefined",
-      image: reception // Assuming reception image for Luxurious Suite
+      image: reception
     },
     {
       title: "Spacious Suite",
       description: "Spacious Four-Bedroom Family Suite with panoramic city views",
       subtitle: "Experience luxury redefined",
-      image: thirdfloor // Assuming thirdfloor image for Spacious Suite
+      image: thirdfloor
     },
     {
       title: "Executive Suite",
       description: "Executive Two-Bedroom AC Suite with modern amenities",
       subtitle: "Experience luxury redefined",
-      image: mainlobby // Assuming mainlobby image for Executive Suite
+      image: mainlobby
     }
   ];
 
@@ -156,69 +156,38 @@ const About = () => {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {/* First two cards side by side */}
-            {suites.slice(0, 2).map((suite, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {suites.map((suite, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: 30, scale: 0.95 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                whileHover={{ scale: 1.02, boxShadow: "0 10px 30px rgba(230, 184, 77, 0.3)" }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
-                className="glass rounded-2xl p-8 text-center group hover:border-gold transition-all duration-300 relative"
+                transition={{ duration: 0.6, delay: index * 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
+                className="relative glass rounded-2xl overflow-hidden group"
               >
-                <OptimizedImage
-                  src={suite.image}
-                  alt={`${suite.title} - Elegant room design`}
-                  width={400}
-                  height={256}
-                  className="rounded-t-2xl w-full h-64 object-cover absolute inset-0 -z-10"
-                  priority={index === 0}
-                  loading={index === 0 ? "eager" : "lazy"}
-                  sizes="(max-width: 768px) 50vw, 25vw"
-                />
-                <div className="relative z-10">
-                  <h3 className="font-serif text-2xl font-semibold mb-4 text-luxury-white group-hover:text-luxury group-hover:gold-glow transition-all duration-300">
-                    {suite.title}
-                  </h3>
-                  <p className="text-cream-dark text-lg mb-4 leading-relaxed">
-                    {suite.description}
-                  </p>
-                  <p className="text-cream font-semibold">
-                    {suite.subtitle}
-                  </p>
+                <div className="relative w-full aspect-[3/2]">
+                  <OptimizedImage
+                    src={suite.image}
+                    alt={`${suite.title} - Elegant room design`}
+                    width={400}
+                    height={267}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    priority={index === 0}
+                    loading={index === 0 ? "eager" : "lazy"}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300" />
                 </div>
-              </motion.div>
-            ))}
-          </div>
-          {/* Third card full width */}
-          <div className="mt-8 w-full">
-            {suites.slice(2).map((suite, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: (index + 2) * 0.2 }}
-                className="glass rounded-2xl p-8 text-center group hover:border-gold transition-all duration-300 relative w-full"
-              >
-                <OptimizedImage
-                  src={suite.image}
-                  alt={`${suite.title} - Elegant room design`}
-                  width={800}
-                  height={400}
-                  className="rounded-t-2xl w-full h-64 object-cover absolute inset-0 -z-10"
-                  loading="lazy"
-                  sizes="100vw"
-                />
-                <div className="relative z-10">
-                  <h3 className="font-serif text-2xl font-semibold mb-4 text-luxury-white group-hover:text-luxury group-hover:gold-glow transition-all duration-300">
+                <div className="p-6 text-center relative z-10">
+                  <h3 className="font-serif text-2xl font-semibold mb-3 text-luxury-white-г group-hover:text-gold transition-colors duration-300">
                     {suite.title}
                   </h3>
-                  <p className="text-cream-dark text-lg mb-4 leading-relaxed">
+                  <p className="text-cream-dark text-base mb-3 leading-relaxed">
                     {suite.description}
                   </p>
-                  <p className="text-cream font-semibold">
+                  <p className="text-cream font-medium text-sm italic">
                     {suite.subtitle}
                   </p>
                 </div>
