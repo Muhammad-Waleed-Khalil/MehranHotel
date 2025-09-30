@@ -167,12 +167,12 @@ const Footer = () => {
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.2 }}
             >
-              <span>Developer by</span>
+              <span>Developed by</span>
               <a 
                 href="mailto:mwaleedkhalil@gmail.com"
                 className="text-gold hover:text-gold-light transition-colors font-medium hover:underline"
               >
-                Muhammad Khalil
+                Muhammad Waleed Khalil - 0399648331
               </a>
             </motion.div>
           </div>
