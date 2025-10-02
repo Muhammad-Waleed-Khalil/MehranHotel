@@ -1,10 +1,13 @@
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import PremiumRoomCard from "./PremiumRoomCard";
 import premium from "@/assets/premium.jpg";
 import fourbedroom from "@/assets/fourbedroom.jpg";
 import twobedAc from "@/assets/twobedAc.jpg";
 
 const PremiumRoomsSection = () => {
+  const navigate = useNavigate();
+  
   const rooms = [
      {
        title: "Luxurious Premium Suite with elegant furnishings and marble accents",
@@ -125,14 +128,14 @@ const PremiumRoomsSection = () => {
             <p className="text-cream mb-6">
               Book your premium suite today and discover the finest hospitality in Peshawar.
             </p>
-            <a
-              href="https://www.google.com/maps/place/Mehran+hotel+peshawar(Rs+1600+up+to+5000)/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-gold hover:bg-gold-light text-navy-deep font-semibold px-8 py-4 rounded-full transition-all duration-300 shadow-[0_0_30px_rgba(230,184,77,0.4)] hover:shadow-[0_0_50px_rgba(230,184,77,0.6)]"
+            <motion.button
+              onClick={() => navigate('/contact')}
+              className="inline-block bg-gold hover:bg-gold-light text-navy-deep hover:text-black font-semibold px-6 py-3 rounded-full transition-all duration-300 shadow-[0_0_30px_rgba(230,184,77,0.4)] hover:shadow-[0_0_50px_rgba(230,184,77,0.6)] text-center"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
             >
-              Book Your Suite
-            </a>
+              Book Suite
+            </motion.button>
           </div>
         </motion.div>
       </div>

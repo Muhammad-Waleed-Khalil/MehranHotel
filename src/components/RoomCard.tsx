@@ -104,7 +104,7 @@ const RoomCard = ({
           {/* Book Button */}
           <motion.button
             onClick={() => navigate('/contact')}
-            className="w-full glass-strong rounded-2xl py-4 border-luxury text-gold hover:text-navy-deep font-semibold transition-all duration-200 group-hover:bg-gold group-hover:text-navy-deep cursor-pointer"
+            className="w-full glass-strong rounded-2xl py-4 border-luxury text-gold hover:text-black font-semibold transition-all duration-200 group-hover:bg-gold group-hover:text-black cursor-pointer text-center"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
           >

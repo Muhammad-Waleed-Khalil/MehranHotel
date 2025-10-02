@@ -127,7 +127,7 @@ const PremiumRoomCard = ({
               {/* Book Button */}
               <motion.button
                 onClick={() => navigate('/contact')}
-                className="bg-gold hover:bg-gold-light text-navy-deep font-semibold px-6 py-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
+                className="bg-gold hover:bg-gold-light text-navy-deep hover:text-black font-semibold px-6 py-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl text-center"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
