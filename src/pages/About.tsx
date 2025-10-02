@@ -55,7 +55,7 @@ const About = () => {
     },
     {
       title: "Spacious Suite",
-      description: "Spacious Four-Bedroom Family Suite with panoramic city views",
+      description: "Spacious Four-Bedroom Family Suite",
       subtitle: "Experience luxury redefined",
       image: thirdfloor
     },

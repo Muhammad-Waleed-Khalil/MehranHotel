@@ -17,35 +17,21 @@ const PremiumRoomsSection = () => {
       beds: 2,
       guests: 4,
       features: [
-        "Marble bathroom with rainfall shower",
-        "Premium Egyptian cotton linens",
-        "Private balcony with city views",
-        "24/7 concierge service",
-        "Complimentary minibar",
-        "High-speed Wi-Fi",
-        "Smart TV with streaming",
-        "Air conditioning & heating"
+       
       ],
       price: 5000,
       originalPrice: 6000,
       isPremium: true
     },
     {
-      title: "Spacious Four-Bedroom Family Suite with panoramic city views",
+      title: "Spacious Four-Bedroom Family Suite",
       subtitle: "Spacious Suite", 
       description: "Experience luxury redefined",
       image: fourbedroom,
       beds: 4,
       guests: 8,
       features: [
-        "Four separate bedrooms",
-        "Panoramic city views",
-        "Large living area",
-        "Full kitchenette",
-        "Two marble bathrooms",
-        "Family-friendly amenities",
-        "High-speed Wi-Fi",
-        "Air conditioning & heating"
+      
       ],
       price: 4000,
       originalPrice: 4800,
@@ -59,14 +45,7 @@ const PremiumRoomsSection = () => {
       beds: 2,
       guests: 4,
       features: [
-        "Executive workspace",
-        "Modern AC system",
-        "Two comfortable bedrooms",
-        "Marble bathroom",
-        "Business center access",
-        "Complimentary breakfast",
-        "High-speed Wi-Fi",
-        "Airport transfer service"
+        
       ],
       price: 3500,
       originalPrice: 4200,
@@ -94,7 +73,7 @@ const PremiumRoomsSection = () => {
         </motion.div>
 
         {/* Rooms Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1  lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {rooms.map((room, index) => (
             <PremiumRoomCard
               key={index}
