@@ -95,6 +95,7 @@ const Index = () => {
       <SEO 
         config={pageSEO.home}
         structuredData={[hotelSchema, breadcrumbSchema, localBusinessSchema, organizationSchema, webSiteSchema]}
+        preloadImages={[outside, premium, fourbedroom, twobedAc]}
       />
 
       {/* Hero Section */}

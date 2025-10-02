@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { MapPin, Phone, Mail, ArrowUp } from "lucide-react";
 import { motion } from "framer-motion";
 import SocialLinks from "./SocialLinks";
+import OptimizedImage from "./OptimizedImage";
 import logo from "@/assets/logo.png";
 
 const Footer = () => {
@@ -31,7 +32,16 @@ const Footer = () => {
           >
             <div className="flex items-center gap-4 mb-6">
               <div className="relative">
-                <img src="/logo.png" alt="Mehran Hotel" className="h-16 w-auto" />
+                <OptimizedImage 
+                  src="/logo.png" 
+                  alt="Mehran Hotel" 
+                  width={64}
+                  height={64}
+                  className="h-16 w-auto" 
+                  priority={true}
+                  loading="eager"
+                  sizes="64px"
+                />
                 <div className="absolute inset-0 bg-gold/20 rounded-full blur-lg opacity-50" />
               </div>
               <span className="font-serif text-3xl font-bold text-luxury-white gold-glow">

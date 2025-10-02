@@ -72,6 +72,7 @@ const About = () => {
       <SEO 
         config={pageSEO.about}
         structuredData={[breadcrumbSchema]}
+        preloadImages={[mainlobby, reception, thirdfloor]}
       />
 
       <Hero

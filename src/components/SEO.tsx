@@ -4,9 +4,10 @@ import { SEOConfig, defaultSEO, generatePageTitle, generateCanonicalUrl } from '
 interface SEOProps {
   config?: Partial<SEOConfig>;
   structuredData?: Record<string, any>[];
+  preloadImages?: string[];
 }
 
-const SEO = ({ config = {}, structuredData = [] }: SEOProps) => {
+const SEO = ({ config = {}, structuredData = [], preloadImages = [] }: SEOProps) => {
   const seoConfig = { ...defaultSEO, ...config };
   const title = generatePageTitle(seoConfig.title);
   const canonical = seoConfig.canonical || generateCanonicalUrl(window.location.pathname);
@@ -66,6 +67,27 @@ const SEO = ({ config = {}, structuredData = [] }: SEOProps) => {
       {/* DNS Prefetch for external resources */}
       <link rel="dns-prefetch" href="//www.google-analytics.com" />
       <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+      
+      {/* Preload critical images */}
+      {preloadImages.map((imageSrc, index) => (
+        <link
+          key={index}
+          rel="preload"
+          as="image"
+          href={imageSrc}
+          type="image/webp"
+        />
+      ))}
+      
+      {/* Preload hero/background images with higher priority */}
+      {seoConfig.ogImage && (
+        <link
+          rel="preload"
+          as="image"
+          href={seoConfig.ogImage}
+          type="image/webp"
+        />
+      )}
     </Helmet>
   );
 };

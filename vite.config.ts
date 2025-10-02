@@ -17,4 +17,34 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          // Vendor chunks
+          vendor: ['react', 'react-dom'],
+          router: ['react-router-dom'],
+          animation: ['framer-motion', 'gsap'],
+          ui: ['lucide-react'],
+          // Component chunks
+          components: [
+            './src/components/Hero.tsx',
+            './src/components/OptimizedImage.tsx',
+            './src/components/SEO.tsx'
+          ],
+          pages: [
+            './src/pages/Index.tsx',
+            './src/pages/About.tsx',
+            './src/pages/Contact.tsx',
+            './src/pages/Services.tsx'
+          ]
+        }
+      }
+    },
+    chunkSizeWarningLimit: 1000,
+    assetsInlineLimit: 4096, // Inline assets smaller than 4kb
+    cssCodeSplit: true,
+    sourcemap: false, // Disable sourcemaps in production for smaller bundles
+  },
+  assetsInclude: ['**/*.webp', '**/*.avif'], // Include modern image formats
 }));

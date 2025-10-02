@@ -1,0 +1,655 @@
+{
+  "images": {
+    "2ndfloorlobby-1024w": {
+      "webp": [],
+      "fallback": null
+    },
+    "2ndfloorlobby": {
+      "webp": [
+        {
+          "size": 320,
+          "url": "/optimized/2ndfloorlobby-320w.webp"
+        },
+        {
+          "size": 640,
+          "url": "/optimized/2ndfloorlobby-640w.webp"
+        },
+        {
+          "size": 768,
+          "url": "/optimized/2ndfloorlobby-768w.webp"
+        },
+        {
+          "size": 1024,
+          "url": "/optimized/2ndfloorlobby-1024w.webp"
+        },
+        {
+          "size": 1280,
+          "url": "/optimized/2ndfloorlobby-1280w.webp"
+        },
+        {
+          "size": 1536,
+          "url": "/optimized/2ndfloorlobby-1536w.webp"
+        },
+        {
+          "size": 1920,
+          "url": "/optimized/2ndfloorlobby-1920w.webp"
+        }
+      ],
+      "fallback": "/optimized/2ndfloorlobby-optimized.jpg"
+    },
+    "2ndfloorlobby-1280w": {
+      "webp": [],
+      "fallback": null
+    },
+    "2ndfloorlobby-1536w": {
+      "webp": [],
+      "fallback": null
+    },
+    "2ndfloorlobby-1920w": {
+      "webp": [],
+      "fallback": null
+    },
+    "2ndfloorlobby-320w": {
+      "webp": [],
+      "fallback": null
+    },
+    "2ndfloorlobby-640w": {
+      "webp": [],
+      "fallback": null
+    },
+    "2ndfloorlobby-768w": {
+      "webp": [],
+      "fallback": null
+    },
+    "2ndfloorlobby-optimized": {
+      "webp": [],
+      "fallback": null
+    },
+    "3rdfloor-1024w": {
+      "webp": [],
+      "fallback": null
+    },
+    "3rdfloor": {
+      "webp": [
+        {
+          "size": 320,
+          "url": "/optimized/3rdfloor-320w.webp"
+        },
+        {
+          "size": 640,
+          "url": "/optimized/3rdfloor-640w.webp"
+        },
+        {
+          "size": 768,
+          "url": "/optimized/3rdfloor-768w.webp"
+        },
+        {
+          "size": 1024,
+          "url": "/optimized/3rdfloor-1024w.webp"
+        },
+        {
+          "size": 1280,
+          "url": "/optimized/3rdfloor-1280w.webp"
+        },
+        {
+          "size": 1536,
+          "url": "/optimized/3rdfloor-1536w.webp"
+        },
+        {
+          "size": 1920,
+          "url": "/optimized/3rdfloor-1920w.webp"
+        }
+      ],
+      "fallback": "/optimized/3rdfloor-optimized.jpg"
+    },
+    "3rdfloor-1280w": {
+      "webp": [],
+      "fallback": null
+    },
+    "3rdfloor-1536w": {
+      "webp": [],
+      "fallback": null
+    },
+    "3rdfloor-1920w": {
+      "webp": [],
+      "fallback": null
+    },
+    "3rdfloor-320w": {
+      "webp": [],
+      "fallback": null
+    },
+    "3rdfloor-640w": {
+      "webp": [],
+      "fallback": null
+    },
+    "3rdfloor-768w": {
+      "webp": [],
+      "fallback": null
+    },
+    "3rdfloor-optimized": {
+      "webp": [],
+      "fallback": null
+    },
+    "fourbedroom-1024w": {
+      "webp": [],
+      "fallback": null
+    },
+    "fourbedroom": {
+      "webp": [
+        {
+          "size": 320,
+          "url": "/optimized/fourbedroom-320w.webp"
+        },
+        {
+          "size": 640,
+          "url": "/optimized/fourbedroom-640w.webp"
+        },
+        {
+          "size": 768,
+          "url": "/optimized/fourbedroom-768w.webp"
+        },
+        {
+          "size": 1024,
+          "url": "/optimized/fourbedroom-1024w.webp"
+        },
+        {
+          "size": 1280,
+          "url": "/optimized/fourbedroom-1280w.webp"
+        },
+        {
+          "size": 1536,
+          "url": "/optimized/fourbedroom-1536w.webp"
+        },
+        {
+          "size": 1920,
+          "url": "/optimized/fourbedroom-1920w.webp"
+        }
+      ],
+      "fallback": "/optimized/fourbedroom-optimized.jpg"
+    },
+    "fourbedroom-1280w": {
+      "webp": [],
+      "fallback": null
+    },
+    "fourbedroom-1536w": {
+      "webp": [],
+      "fallback": null
+    },
+    "fourbedroom-1920w": {
+      "webp": [],
+      "fallback": null
+    },
+    "fourbedroom-320w": {
+      "webp": [],
+      "fallback": null
+    },
+    "fourbedroom-640w": {
+      "webp": [],
+      "fallback": null
+    },
+    "fourbedroom-768w": {
+      "webp": [],
+      "fallback": null
+    },
+    "fourbedroom-optimized": {
+      "webp": [],
+      "fallback": null
+    },
+    "logo-1024w": {
+      "webp": [],
+      "fallback": null
+    },
+    "logo": {
+      "webp": [
+        {
+          "size": 320,
+          "url": "/optimized/logo-320w.webp"
+        },
+        {
+          "size": 640,
+          "url": "/optimized/logo-640w.webp"
+        },
+        {
+          "size": 768,
+          "url": "/optimized/logo-768w.webp"
+        },
+        {
+          "size": 1024,
+          "url": "/optimized/logo-1024w.webp"
+        },
+        {
+          "size": 1280,
+          "url": "/optimized/logo-1280w.webp"
+        },
+        {
+          "size": 1536,
+          "url": "/optimized/logo-1536w.webp"
+        },
+        {
+          "size": 1920,
+          "url": "/optimized/logo-1920w.webp"
+        }
+      ],
+      "fallback": "/optimized/logo-optimized.png"
+    },
+    "logo-1280w": {
+      "webp": [],
+      "fallback": null
+    },
+    "logo-1536w": {
+      "webp": [],
+      "fallback": null
+    },
+    "logo-1920w": {
+      "webp": [],
+      "fallback": null
+    },
+    "logo-320w": {
+      "webp": [],
+      "fallback": null
+    },
+    "logo-640w": {
+      "webp": [],
+      "fallback": null
+    },
+    "logo-768w": {
+      "webp": [],
+      "fallback": null
+    },
+    "logo-optimized": {
+      "webp": [],
+      "fallback": null
+    },
+    "mainlobby-1024w": {
+      "webp": [],
+      "fallback": null
+    },
+    "mainlobby": {
+      "webp": [
+        {
+          "size": 320,
+          "url": "/optimized/mainlobby-320w.webp"
+        },
+        {
+          "size": 640,
+          "url": "/optimized/mainlobby-640w.webp"
+        },
+        {
+          "size": 768,
+          "url": "/optimized/mainlobby-768w.webp"
+        },
+        {
+          "size": 1024,
+          "url": "/optimized/mainlobby-1024w.webp"
+        },
+        {
+          "size": 1280,
+          "url": "/optimized/mainlobby-1280w.webp"
+        },
+        {
+          "size": 1536,
+          "url": "/optimized/mainlobby-1536w.webp"
+        },
+        {
+          "size": 1920,
+          "url": "/optimized/mainlobby-1920w.webp"
+        }
+      ],
+      "fallback": "/optimized/mainlobby-optimized.jpg"
+    },
+    "mainlobby-1280w": {
+      "webp": [],
+      "fallback": null
+    },
+    "mainlobby-1536w": {
+      "webp": [],
+      "fallback": null
+    },
+    "mainlobby-1920w": {
+      "webp": [],
+      "fallback": null
+    },
+    "mainlobby-320w": {
+      "webp": [],
+      "fallback": null
+    },
+    "mainlobby-640w": {
+      "webp": [],
+      "fallback": null
+    },
+    "mainlobby-768w": {
+      "webp": [],
+      "fallback": null
+    },
+    "mainlobby-optimized": {
+      "webp": [],
+      "fallback": null
+    },
+    "og-image-1024w": {
+      "webp": [],
+      "fallback": null
+    },
+    "og-image": {
+      "webp": [
+        {
+          "size": 320,
+          "url": "/optimized/og-image-320w.webp"
+        },
+        {
+          "size": 640,
+          "url": "/optimized/og-image-640w.webp"
+        },
+        {
+          "size": 768,
+          "url": "/optimized/og-image-768w.webp"
+        },
+        {
+          "size": 1024,
+          "url": "/optimized/og-image-1024w.webp"
+        },
+        {
+          "size": 1280,
+          "url": "/optimized/og-image-1280w.webp"
+        },
+        {
+          "size": 1536,
+          "url": "/optimized/og-image-1536w.webp"
+        },
+        {
+          "size": 1920,
+          "url": "/optimized/og-image-1920w.webp"
+        }
+      ],
+      "fallback": "/optimized/og-image-optimized.jpg"
+    },
+    "og-image-1280w": {
+      "webp": [],
+      "fallback": null
+    },
+    "og-image-1536w": {
+      "webp": [],
+      "fallback": null
+    },
+    "og-image-1920w": {
+      "webp": [],
+      "fallback": null
+    },
+    "og-image-320w": {
+      "webp": [],
+      "fallback": null
+    },
+    "og-image-640w": {
+      "webp": [],
+      "fallback": null
+    },
+    "og-image-768w": {
+      "webp": [],
+      "fallback": null
+    },
+    "og-image-optimized": {
+      "webp": [],
+      "fallback": null
+    },
+    "outside-1024w": {
+      "webp": [],
+      "fallback": null
+    },
+    "outside": {
+      "webp": [
+        {
+          "size": 320,
+          "url": "/optimized/outside-320w.webp"
+        },
+        {
+          "size": 640,
+          "url": "/optimized/outside-640w.webp"
+        },
+        {
+          "size": 768,
+          "url": "/optimized/outside-768w.webp"
+        },
+        {
+          "size": 1024,
+          "url": "/optimized/outside-1024w.webp"
+        },
+        {
+          "size": 1280,
+          "url": "/optimized/outside-1280w.webp"
+        },
+        {
+          "size": 1536,
+          "url": "/optimized/outside-1536w.webp"
+        },
+        {
+          "size": 1920,
+          "url": "/optimized/outside-1920w.webp"
+        }
+      ],
+      "fallback": "/optimized/outside-optimized.jpg"
+    },
+    "outside-1280w": {
+      "webp": [],
+      "fallback": null
+    },
+    "outside-1536w": {
+      "webp": [],
+      "fallback": null
+    },
+    "outside-1920w": {
+      "webp": [],
+      "fallback": null
+    },
+    "outside-320w": {
+      "webp": [],
+      "fallback": null
+    },
+    "outside-640w": {
+      "webp": [],
+      "fallback": null
+    },
+    "outside-768w": {
+      "webp": [],
+      "fallback": null
+    },
+    "outside-optimized": {
+      "webp": [],
+      "fallback": null
+    },
+    "premium-1024w": {
+      "webp": [],
+      "fallback": null
+    },
+    "premium": {
+      "webp": [
+        {
+          "size": 320,
+          "url": "/optimized/premium-320w.webp"
+        },
+        {
+          "size": 640,
+          "url": "/optimized/premium-640w.webp"
+        },
+        {
+          "size": 768,
+          "url": "/optimized/premium-768w.webp"
+        },
+        {
+          "size": 1024,
+          "url": "/optimized/premium-1024w.webp"
+        },
+        {
+          "size": 1280,
+          "url": "/optimized/premium-1280w.webp"
+        },
+        {
+          "size": 1536,
+          "url": "/optimized/premium-1536w.webp"
+        },
+        {
+          "size": 1920,
+          "url": "/optimized/premium-1920w.webp"
+        }
+      ],
+      "fallback": "/optimized/premium-optimized.jpg"
+    },
+    "premium-1280w": {
+      "webp": [],
+      "fallback": null
+    },
+    "premium-1536w": {
+      "webp": [],
+      "fallback": null
+    },
+    "premium-1920w": {
+      "webp": [],
+      "fallback": null
+    },
+    "premium-320w": {
+      "webp": [],
+      "fallback": null
+    },
+    "premium-640w": {
+      "webp": [],
+      "fallback": null
+    },
+    "premium-768w": {
+      "webp": [],
+      "fallback": null
+    },
+    "premium-optimized": {
+      "webp": [],
+      "fallback": null
+    },
+    "reception-1024w": {
+      "webp": [],
+      "fallback": null
+    },
+    "reception": {
+      "webp": [
+        {
+          "size": 320,
+          "url": "/optimized/reception-320w.webp"
+        },
+        {
+          "size": 640,
+          "url": "/optimized/reception-640w.webp"
+        },
+        {
+          "size": 768,
+          "url": "/optimized/reception-768w.webp"
+        },
+        {
+          "size": 1024,
+          "url": "/optimized/reception-1024w.webp"
+        },
+        {
+          "size": 1280,
+          "url": "/optimized/reception-1280w.webp"
+        },
+        {
+          "size": 1536,
+          "url": "/optimized/reception-1536w.webp"
+        },
+        {
+          "size": 1920,
+          "url": "/optimized/reception-1920w.webp"
+        }
+      ],
+      "fallback": "/optimized/reception-optimized.jpg"
+    },
+    "reception-1280w": {
+      "webp": [],
+      "fallback": null
+    },
+    "reception-1536w": {
+      "webp": [],
+      "fallback": null
+    },
+    "reception-1920w": {
+      "webp": [],
+      "fallback": null
+    },
+    "reception-320w": {
+      "webp": [],
+      "fallback": null
+    },
+    "reception-640w": {
+      "webp": [],
+      "fallback": null
+    },
+    "reception-768w": {
+      "webp": [],
+      "fallback": null
+    },
+    "reception-optimized": {
+      "webp": [],
+      "fallback": null
+    },
+    "twobedAc-1024w": {
+      "webp": [],
+      "fallback": null
+    },
+    "twobedAc": {
+      "webp": [
+        {
+          "size": 320,
+          "url": "/optimized/twobedAc-320w.webp"
+        },
+        {
+          "size": 640,
+          "url": "/optimized/twobedAc-640w.webp"
+        },
+        {
+          "size": 768,
+          "url": "/optimized/twobedAc-768w.webp"
+        },
+        {
+          "size": 1024,
+          "url": "/optimized/twobedAc-1024w.webp"
+        },
+        {
+          "size": 1280,
+          "url": "/optimized/twobedAc-1280w.webp"
+        },
+        {
+          "size": 1536,
+          "url": "/optimized/twobedAc-1536w.webp"
+        },
+        {
+          "size": 1920,
+          "url": "/optimized/twobedAc-1920w.webp"
+        }
+      ],
+      "fallback": "/optimized/twobedAc-optimized.jpg"
+    },
+    "twobedAc-1280w": {
+      "webp": [],
+      "fallback": null
+    },
+    "twobedAc-1536w": {
+      "webp": [],
+      "fallback": null
+    },
+    "twobedAc-1920w": {
+      "webp": [],
+      "fallback": null
+    },
+    "twobedAc-320w": {
+      "webp": [],
+      "fallback": null
+    },
+    "twobedAc-640w": {
+      "webp": [],
+      "fallback": null
+    },
+    "twobedAc-768w": {
+      "webp": [],
+      "fallback": null
+    },
+    "twobedAc-optimized": {
+      "webp": [],
+      "fallback": null
+    }
+  },
+  "lastUpdated": "2025-10-02T05:06:58.415Z"
+}

@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import OptimizedImage from "./OptimizedImage";
 import logo from "@/assets/logo.png";
 
 const Navbar = () => {
@@ -64,10 +65,15 @@ const Navbar = () => {
               >
             <Link to="/" className="flex items-center gap-4 group">
               <div className="relative">
-                <img 
+                <OptimizedImage 
                   src="/logo.png" 
                   alt="Mehran Hotel Logo" 
+                  width={64}
+                  height={64}
                   className="h-16 w-auto transition-all duration-500 ease-out group-hover:scale-110 rounded-lg" 
+                  priority={true}
+                  loading="eager"
+                  sizes="64px"
                 />
                 <div className="absolute inset-0 bg-gold/30 rounded-lg blur-lg opacity-0 group-hover:opacity-100 transition-all duration-500 ease-out" />
               </div>
