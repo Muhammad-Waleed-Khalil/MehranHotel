@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Bed, Users, Wifi, Car, Utensils, Star, Crown, Sparkles } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import OptimizedImage from "./OptimizedImage";
 
 interface PremiumRoomCardProps {
@@ -29,6 +30,8 @@ const PremiumRoomCard = ({
   delay = 0,
   isPremium = false
 }: PremiumRoomCardProps) => {
+  const navigate = useNavigate();
+  
   return (
     <motion.div
       initial={{ opacity: 0, y: 30, scale: 0.98 }}
@@ -123,7 +126,7 @@ const PremiumRoomCard = ({
 
               {/* Book Button */}
               <motion.button
-                onClick={() => window.location.href = '/contact'}
+                onClick={() => navigate('/contact')}
                 className="bg-gold hover:bg-gold-light text-navy-deep font-semibold px-6 py-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}

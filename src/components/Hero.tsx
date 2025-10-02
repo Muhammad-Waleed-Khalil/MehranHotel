@@ -156,11 +156,11 @@ const Hero = ({ title, subtitle, backgroundImage, showCTA = false }: HeroProps) 
                     size="lg"
                     className="glass-premium border-luxury text-gold hover:text-navy-deep font-semibold px-12 py-7 text-lg rounded-full luxury-hover group"
                   >
-                    <a href="/contact">
+                    <Link to="/contact">
                       <span className="group-hover:scale-105 transition-transform duration-300">
                         Reserve Your Stay
                       </span>
-                    </a>
+                    </Link>
                   </Button>
               <Button
                 asChild

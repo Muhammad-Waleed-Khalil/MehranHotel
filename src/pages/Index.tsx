@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Hotel, Utensils, Users, Clock, Car } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import Hero from "@/components/Hero";
 import ServiceCard from "@/components/ServiceCard";
 import RoomCard from "@/components/RoomCard";
@@ -15,6 +16,7 @@ import fourbedroom from "@/assets/fourbedroom.jpg";
 import twobedAc from "@/assets/twobedAc.jpg";
 
 const Index = () => {
+  const navigate = useNavigate();
   const hotelSchema = generateHotelSchema();
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", url: "https://www.hotelmehran.com/" }
@@ -418,7 +420,7 @@ const Index = () => {
               Valid until the end of this month.
             </p>
             <motion.button
-              onClick={() => window.location.href = '/contact'}
+              onClick={() => navigate('/contact')}
               className="glass-strong rounded-2xl px-8 py-4 border-luxury text-gold hover:text-navy-deep font-semibold transition-all duration-300 hover:bg-gold hover:text-navy-deep cursor-pointer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

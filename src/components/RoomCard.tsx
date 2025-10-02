@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Bed, Wifi, Car, Utensils, Users, Star } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 interface RoomCardProps {
   title: string;
@@ -24,6 +25,7 @@ const RoomCard = ({
   guests, 
   delay = 0 
 }: RoomCardProps) => {
+  const navigate = useNavigate();
   return (
     <motion.div
       initial={{ opacity: 0, y: 30, scale: 0.98 }}
@@ -101,7 +103,7 @@ const RoomCard = ({
 
           {/* Book Button */}
           <motion.button
-            onClick={() => window.location.href = '/contact'}
+            onClick={() => navigate('/contact')}
             className="w-full glass-strong rounded-2xl py-4 border-luxury text-gold hover:text-navy-deep font-semibold transition-all duration-200 group-hover:bg-gold group-hover:text-navy-deep cursor-pointer"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
