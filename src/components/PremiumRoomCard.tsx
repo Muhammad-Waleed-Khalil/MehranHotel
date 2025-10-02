@@ -58,13 +58,13 @@ const PremiumRoomCard = ({
           />
           
           {/* Dark Overlay at Bottom */}
-          <div className="absolute bottom-0 left-0 right-0 bg-black/70 backdrop-blur-sm p-6">
+          <div className="absolute bottom-0 left-0 right-0 bg-black/70 backdrop-blur-sm p-4">
             <div className="text-center">
-              <h3 className="font-serif text-2xl font-bold text-white mb-2 group-hover:text-gold transition-colors duration-300">
+              <h3 className="font-serif text-lg font-bold text-black mb-1 group-hover:text-gold transition-colors duration-300">
                 {subtitle}
               </h3>
-              <p className="text-cream text-sm">
-                {description}
+              <p className="text-black text-xs font-medium">
+                Luxury Suite
               </p>
             </div>
           </div>
