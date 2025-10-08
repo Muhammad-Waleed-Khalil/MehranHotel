@@ -97,11 +97,12 @@ const Hero = ({ title, subtitle, backgroundImage, showCTA = false }: HeroProps) 
         />
       </motion.div>
 
-      {/* Enhanced Multi-layer Overlays for Cinematic Effect */}
-      <div className="absolute inset-0 bg-gradient-to-b from-navy-deep/98 via-navy-deep/85 to-navy-deep/70" />
-      <div className="absolute inset-0 bg-gradient-to-r from-navy-deep/75 via-transparent to-gold/25" />
-      <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/95 via-transparent to-transparent" />
+      {/* Subtle Overlays for White Theme */}
       <div className="absolute inset-0 bg-gradient-to-br from-gold/5 via-transparent to-gold-metallic/8" />
+      
+      {/* Text Readability Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-white/20 via-white/10 to-white/30" />
+      <div className="absolute inset-0 bg-gradient-to-t from-white/25 via-transparent to-transparent" />
       
       {/* Enhanced Ambient Glow Effects */}
       <div className="ambient-glow absolute top-1/4 left-1/3 w-[500px] h-[500px] bg-gold/18 rounded-full blur-3xl" />
@@ -121,13 +122,13 @@ const Hero = ({ title, subtitle, backgroundImage, showCTA = false }: HeroProps) 
         className="relative z-10 container mx-auto px-6 text-center max-w-6xl"
       >
         <motion.div
-          className="hero-text"
+          className="hero-text pt-20"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
         >
               <motion.h1 
-                className="font-serif text-6xl md:text-8xl lg:text-9xl font-bold mb-8 text-luxury-white gold-glow leading-none"
+                className="font-serif text-6xl md:text-8xl lg:text-9xl font-bold mb-8 text-black gold-glow leading-none drop-shadow-lg"
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 0.1, ease: [0.25, 0.46, 0.45, 0.94] }}
@@ -136,13 +137,28 @@ const Hero = ({ title, subtitle, backgroundImage, showCTA = false }: HeroProps) 
               </motion.h1>
               
               <motion.p 
-                className="text-xl md:text-2xl lg:text-3xl text-cream mb-12 max-w-4xl mx-auto font-light leading-relaxed"
+                className="text-xl md:text-2xl lg:text-3xl text-navy mb-12 max-w-4xl mx-auto font-bold leading-relaxed drop-shadow-md"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
               >
                 {subtitle}
               </motion.p>
+
+              {/* Urdu Welcome Message */}
+              <motion.div
+                className="mb-8"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: 0.4, ease: [0.25, 0.46, 0.45, 0.94] }}
+              >
+                <p className="text-lg md:text-xl lg:text-2xl text-black font-bold leading-relaxed mb-4 noto-nastaliq-urdu drop-shadow-md" dir="rtl">
+                  🌟 پشاور آنے والوں کے لیے شاندار خوشخبری! 🌟
+                </p>
+                <p className="text-base md:text-lg lg:text-xl text-navy font-bold leading-relaxed noto-nastaliq-urdu drop-shadow-sm" dir="rtl">
+                  ✨ مہران ہوٹل پشاور! ✨
+                </p>
+              </motion.div>
 
           {showCTA && (
             <motion.div
@@ -154,7 +170,7 @@ const Hero = ({ title, subtitle, backgroundImage, showCTA = false }: HeroProps) 
                   <Button
                     asChild
                     size="lg"
-                    className="glass-premium border-luxury text-gold hover:text-navy-deep font-semibold px-12 py-7 text-lg rounded-full luxury-hover group"
+                    className="glass-premium border-luxury text-white hover:text-white font-semibold px-12 py-7 text-lg rounded-full luxury-hover group"
                   >
                     <Link to="/contact">
                       <span className="group-hover:scale-105 transition-transform duration-300">
@@ -166,7 +182,7 @@ const Hero = ({ title, subtitle, backgroundImage, showCTA = false }: HeroProps) 
                 asChild
                 variant="outline"
                 size="lg"
-                className="border-2 border-gold/60 text-gold hover:bg-gold hover:text-navy-deep font-semibold px-12 py-7 text-lg rounded-full luxury-hover glass backdrop-blur-sm"
+                className="border-2 border-gold/60 text-black hover:bg-gold hover:text-white font-semibold px-12 py-7 text-lg rounded-full luxury-hover glass backdrop-blur-sm"
               >
                 <Link to="/contact">
                   <span className="group-hover:scale-105 transition-transform duration-300">

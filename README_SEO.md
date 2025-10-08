@@ -73,7 +73,7 @@ Make sure to verify and update the phone number in all locations:
 - Contact page
 - Structured data schemas
 
-Current phone (+92-21-1234567) uses Karachi area code. Update to local Peshawar number if needed.
+Current phone (0300-5819858) 
 
 ## Social Media
 

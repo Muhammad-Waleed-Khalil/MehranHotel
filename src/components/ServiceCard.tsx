@@ -33,8 +33,7 @@ const ServiceCard = ({ icon: Icon, title, description, image, delay = 0 }: Servi
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               whileHover={{ scale: 1.1 }}
             />
-            {/* Multi-layer Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/95 via-navy-deep/60 to-transparent" />
+            {/* Subtle Gold Overlay */}
             <div className="absolute inset-0 bg-gradient-to-br from-gold/20 via-transparent to-gold-metallic/10" />
             
             {/* Floating Icon Overlay */}
@@ -43,7 +42,7 @@ const ServiceCard = ({ icon: Icon, title, description, image, delay = 0 }: Servi
                 whileHover={{ scale: 1.05, rotate: 3 }}
                 transition={{ duration: 0.15 }}
             >
-              <Icon className="text-gold" size={20} />
+              <Icon className="text-gold font-bold" size={20} />
             </motion.div>
           </div>
         )}
@@ -56,12 +55,12 @@ const ServiceCard = ({ icon: Icon, title, description, image, delay = 0 }: Servi
                 whileHover={{ scale: 1.05, rotate: 3 }}
                 transition={{ duration: 0.15 }}
           >
-            <Icon className="text-gold group-hover:text-gold-light transition-colors duration-300" size={32} />
+            <Icon className="text-gold font-bold group-hover:text-gold-light font-bold transition-colors duration-300" size={32} />
           </motion.div>
 
           {/* Enhanced Title */}
           <motion.h3
-            className="font-serif text-3xl font-semibold mb-6 text-luxury-white group-hover:text-luxury group-hover:gold-glow transition-all duration-500 leading-tight"
+            className="font-serif text-3xl font-semibold mb-6 text-black group-hover:text-luxury group-hover:gold-glow transition-all duration-500 leading-tight"
             whileHover={{ x: 3 }}
             transition={{ duration: 0.15 }}
           >
@@ -69,7 +68,7 @@ const ServiceCard = ({ icon: Icon, title, description, image, delay = 0 }: Servi
           </motion.h3>
 
           {/* Enhanced Description */}
-          <p className="text-cream-dark leading-relaxed text-lg group-hover:text-cream transition-colors duration-300">
+          <p className="text-navy leading-relaxed text-lg group-hover:text-navy-dark transition-colors duration-300">
             {description}
           </p>
 

@@ -62,6 +62,11 @@ export default {
           DEFAULT: "hsl(var(--cream))",
           dark: "hsl(var(--cream-dark))",
         },
+        blue: {
+          DEFAULT: "hsl(var(--navy))",
+          light: "hsl(var(--navy-light))",
+          dark: "hsl(var(--navy-deep))",
+        },
         luxury: {
           white: "hsl(var(--white-pure))",
         },

@@ -48,24 +48,23 @@ const RoomCard = ({
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
             whileHover={{ scale: 1.05 }}
           />
-          {/* Multi-layer Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/95 via-navy-deep/60 to-transparent" />
+          {/* Subtle Gold Overlay */}
           <div className="absolute inset-0 bg-gradient-to-br from-gold/25 via-transparent to-gold-metallic/15" />
           
           {/* Price Badge */}
           <div className="absolute top-4 right-4 glass-premium rounded-2xl p-4 border-luxury">
             <div className="text-center">
-              <div className="text-gold gold-glow font-bold text-xl">PKR {price.toLocaleString()}</div>
+              <div className="text-gold font-bold gold-glow font-bold text-xl">PKR {price.toLocaleString()}</div>
               {originalPrice && (
-                <div className="text-cream-dark text-sm line-through">PKR {originalPrice.toLocaleString()}</div>
+                <div className="text-navy-dark text-sm line-through">PKR {originalPrice.toLocaleString()}</div>
               )}
-              <div className="text-cream text-xs mt-1">per night</div>
+              <div className="text-navy text-xs mt-1">per night</div>
             </div>
           </div>
 
           {/* Room Type Badge */}
           <div className="absolute top-4 left-4 glass rounded-xl px-3 py-2 border-luxury">
-            <span className="text-gold font-semibold text-sm">{title}</span>
+            <span className="text-gold font-bold font-semibold text-sm">{title}</span>
           </div>
         </div>
 
@@ -73,28 +72,28 @@ const RoomCard = ({
         <div className="p-8 relative z-10">
           {/* Room Info */}
           <div className="flex items-center gap-4 mb-6">
-            <div className="flex items-center gap-2 text-cream-dark">
-              <Bed size={20} className="text-gold" />
+            <div className="flex items-center gap-2 text-navy-dark">
+              <Bed size={20} className="text-gold font-bold" />
               <span className="text-sm">{beds} Bed{beds > 1 ? 's' : ''}</span>
             </div>
-            <div className="flex items-center gap-2 text-cream-dark">
-              <Users size={20} className="text-gold" />
+            <div className="flex items-center gap-2 text-navy-dark">
+              <Users size={20} className="text-gold font-bold" />
               <span className="text-sm">{guests} Guest{guests > 1 ? 's' : ''}</span>
             </div>
           </div>
 
           {/* Description */}
-          <p className="text-cream-dark leading-relaxed text-base mb-6 group-hover:text-cream transition-colors duration-200">
+          <p className="text-navy-dark leading-relaxed text-base mb-6 group-hover:text-navy transition-colors duration-200">
             {description}
           </p>
 
           {/* Features */}
           <div className="space-y-3 mb-8">
-            <h4 className="text-gold font-semibold text-sm uppercase tracking-wider">Amenities</h4>
+            <h4 className="text-gold font-bold font-semibold text-sm uppercase tracking-wider">Amenities</h4>
             <div className="grid grid-cols-2 gap-2">
               {features.map((feature, index) => (
-                <div key={index} className="flex items-center gap-2 text-cream-dark text-sm">
-                  <Star size={14} className="text-gold flex-shrink-0" />
+                <div key={index} className="flex items-center gap-2 text-navy-dark text-sm">
+                  <Star size={14} className="text-gold font-bold flex-shrink-0" />
                   <span>{feature}</span>
                 </div>
               ))}
@@ -104,7 +103,7 @@ const RoomCard = ({
           {/* Book Button */}
           <motion.button
             onClick={() => navigate('/contact')}
-            className="w-full glass-strong rounded-2xl py-4 border-luxury text-gold hover:text-black font-semibold transition-all duration-200 group-hover:bg-gold group-hover:text-black cursor-pointer text-center"
+            className="w-full glass-strong rounded-2xl py-4 border-luxury text-black font-bold hover:text-white font-semibold transition-all duration-200 group-hover:bg-gold group-hover:text-white cursor-pointer text-center"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
           >

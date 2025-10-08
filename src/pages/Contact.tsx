@@ -37,8 +37,8 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone",
-      content: "+92-21-1234567",
-      link: "tel:+922112345467"
+      content: "0300-5819858",
+      link: "tel:03005819858"
     },
     {
       icon: Mail,
@@ -78,10 +78,10 @@ const Contact = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.4, ease: [0.25, 0.46, 0.45, 0.94] }}
             >
-              <h2 className="font-serif text-4xl font-bold mb-8 text-luxury-white">
+              <h2 className="font-serif text-4xl font-bold mb-8 text-black">
                 Get in <span className="text-luxury gold-glow">Touch</span>
               </h2>
-              <p className="text-cream text-lg mb-8">
+              <p className="text-navy text-lg mb-8">
                 Have questions or ready to book? We're here to assist you with all your needs.
               </p>
 
@@ -97,21 +97,21 @@ const Contact = () => {
                   >
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0">
-                        <info.icon className="text-gold" size={24} />
+                        <info.icon className="text-gold font-bold" size={24} />
                       </div>
                       <div className="flex-1">
-                        <h3 className="font-semibold text-gold mb-2">{info.title}</h3>
+                        <h3 className="font-semibold text-gold font-bold mb-2">{info.title}</h3>
                         {info.link ? (
                           <a
                             href={info.link}
                             target={info.link.startsWith("http") ? "_blank" : undefined}
                             rel={info.link.startsWith("http") ? "noopener noreferrer" : undefined}
-                            className="text-cream-dark hover:text-gold transition-colors"
+                            className="text-black hover:text-gold font-bold transition-colors"
                           >
                             {info.content}
                           </a>
                         ) : (
-                          <p className="text-gold gold-glow font-semibold">{info.content}</p>
+                          <p className="text-gold font-bold gold-glow font-semibold">{info.content}</p>
                         )}
                       </div>
                     </div>
@@ -119,8 +119,37 @@ const Contact = () => {
                 ))}
               </div>
 
+              {/* Urdu Contact Information */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="mt-8"
+              >
+                <div className="glass-premium rounded-2xl p-6 border-luxury">
+                  <h3 className="font-serif text-xl font-bold text-black mb-4 text-center noto-nastaliq-urdu" dir="rtl">
+                    📞 رابطہ کی تفصیلات
+                  </h3>
+                  <div className="space-y-3">
+                    <p className="text-black text-lg noto-nastaliq-urdu" dir="rtl">
+                      🏨 پتہ: سنیما روڈ، کابلی بازار، پشاور سٹی
+                    </p>
+                    <p className="text-black text-lg noto-nastaliq-urdu" dir="rtl">
+                      📱 رابطہ: <span dir="ltr">0300-5819858</span>
+                    </p>
+                    <p className="text-navy text-base noto-nastaliq-urdu" dir="rtl">
+                      🌍 ٹورسٹ گائیڈ سروس – پشاور کے تاریخی اور ثقافتی مقامات کی بہترین رہنمائی
+                    </p>
+                    <p className="text-navy text-base noto-nastaliq-urdu" dir="rtl">
+                      🚕 لوکل ٹرانسپورٹ کا آسان انتظام
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+
               <div>
-                <h3 className="font-semibold text-gold mb-4">Follow Us</h3>
+                <h3 className="font-semibold text-gold font-bold mb-4">Follow Us</h3>
                 <SocialLinks />
               </div>
             </motion.div>
@@ -133,7 +162,7 @@ const Contact = () => {
               transition={{ duration: 0.4, ease: [0.25, 0.46, 0.45, 0.94] }}
               className="glass rounded-2xl p-8"
             >
-              <h3 className="font-serif text-2xl font-bold mb-6 text-luxury-white">
+              <h3 className="font-serif text-2xl font-bold mb-6 text-black">
                 Send us a <span className="text-luxury gold-glow">Message</span>
               </h3>
               <ContactForm />
@@ -152,14 +181,14 @@ const Contact = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="font-serif text-4xl font-bold mb-4 text-luxury-white">
+            <h2 className="font-serif text-4xl font-bold mb-4 text-black">
               Find <span className="text-luxury gold-glow">Us</span>
             </h2>
-            <p className="text-cream text-lg">
+            <p className="text-navy text-lg">
               Located in the heart of Peshawar
             </p>
-            <p className="text-cream-dark mt-2">
-              <span className="text-gold gold-glow font-semibold">Coordinates:</span> 34.0151°N, 71.5805°E
+            <p className="text-navy-dark mt-2">
+              <span className="text-gold font-bold gold-glow font-semibold">Coordinates:</span> 34.0151°N, 71.5805°E
             </p>
           </motion.div>
 

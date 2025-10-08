@@ -44,11 +44,11 @@ const Footer = () => {
                 />
                 <div className="absolute inset-0 bg-gold/20 rounded-full blur-lg opacity-50" />
               </div>
-              <span className="font-serif text-3xl font-bold text-luxury-white gold-glow">
+              <span className="font-serif text-3xl font-bold text-black gold-glow">
                 Mehran Hotel
               </span>
             </div>
-            <p className="text-cream-dark mb-6 leading-relaxed text-lg max-w-md">
+            <p className="text-navy mb-6 leading-relaxed text-lg max-w-md">
               Experience unparalleled luxury and sophistication in the heart of Peshawar. 
               Where every detail is crafted to perfection for the discerning traveler.
             </p>
@@ -62,7 +62,7 @@ const Footer = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <h3 className="font-serif text-2xl font-semibold text-gold gold-glow mb-6">
+            <h3 className="font-serif text-2xl font-semibold text-gold font-bold gold-glow mb-6">
               Quick Links
             </h3>
             <nav className="flex flex-col gap-4">
@@ -81,7 +81,7 @@ const Footer = () => {
                 >
                   <Link 
                     to={link.path} 
-                    className="text-cream-dark hover:text-gold transition-all duration-200 group flex items-center gap-2"
+                    className="text-navy hover:text-gold font-bold transition-all duration-200 group flex items-center gap-2"
                   >
                     <span className="w-1 h-1 bg-gold/0 group-hover:bg-gold rounded-full transition-all duration-200" />
                     {link.name}
@@ -98,16 +98,16 @@ const Footer = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h3 className="font-serif text-2xl font-semibold text-gold gold-glow mb-6">
+            <h3 className="font-serif text-2xl font-semibold text-gold font-bold gold-glow mb-6">
               Contact Us
             </h3>
             <div className="flex flex-col gap-4">
               <motion.div 
-                className="flex items-start gap-4 text-cream-dark group"
+                className="flex items-start gap-4 text-navy group"
                 whileHover={{ x: 3 }}
                 transition={{ duration: 0.15 }}
               >
-                <MapPin className="text-gold mt-1 flex-shrink-0 group-hover:text-gold-light transition-colors" size={20} />
+                <MapPin className="text-gold font-bold mt-1 flex-shrink-0 group-hover:text-gold font-bold-light transition-colors" size={20} />
                 <span className="leading-relaxed">
                   Cinema Road, Kabley Bazar<br />
                   Peshawar, Pakistan
@@ -115,13 +115,13 @@ const Footer = () => {
               </motion.div>
               
               <motion.div 
-                className="flex items-center gap-4 text-cream-dark group"
+                className="flex items-center gap-4 text-black group"
                 whileHover={{ x: 3 }}
                 transition={{ duration: 0.15 }}
               >
-                <Phone className="text-gold flex-shrink-0 group-hover:text-gold-light transition-colors" size={20} />
+                <Phone className="text-gold font-bold flex-shrink-0 group-hover:text-gold font-bold-light transition-colors" size={20} />
                 <div>
-                  <span className="font-medium">+92-21-1234567</span>
+                  <span className="font-medium text-black">0300-5819858</span>
                   <p className="text-xs italic mt-1 text-muted-foreground">
                     *Please verify local Peshawar number
                   </p>
@@ -129,14 +129,14 @@ const Footer = () => {
               </motion.div>
               
               <motion.div 
-                className="flex items-center gap-4 text-cream-dark group"
+                className="flex items-center gap-4 text-navy group"
                 whileHover={{ x: 3 }}
                 transition={{ duration: 0.15 }}
               >
-                <Mail className="text-gold flex-shrink-0 group-hover:text-gold-light transition-colors" size={20} />
+                <Mail className="text-gold font-bold flex-shrink-0 group-hover:text-gold font-bold-light transition-colors" size={20} />
                 <a 
                   href="mailto:info@hotelmehran.com" 
-                  className="hover:text-gold transition-colors font-medium"
+                  className="hover:text-gold font-bold transition-colors font-medium"
                 >
                   info@hotelmehran.com
                 </a>
@@ -147,10 +147,10 @@ const Footer = () => {
                 whileHover={{ scale: 1.01 }}
                 transition={{ duration: 0.15 }}
               >
-                <div className="text-gold gold-glow font-semibold text-xl">
+                <div className="text-gold font-bold gold-glow font-semibold text-xl">
                   Rs 1,600 – 5,000
                 </div>
-                <div className="text-cream-dark text-sm mt-1">
+                <div className="text-navy text-sm mt-1">
                   Starting rates per night
                 </div>
               </motion.div>
@@ -171,6 +171,16 @@ const Footer = () => {
               &copy; {new Date().getFullYear()} Mehran Hotel. All rights reserved.
             </p>
             
+            {/* Urdu Tagline */}
+            <div className="mt-4 p-4 glass rounded-xl border-luxury">
+              <p className="text-black text-center font-medium noto-nastaliq-urdu" dir="rtl">
+                🔹 مہران ہوٹل پشاور – جہاں مہمان نوازی ہمارا فخر ہے!
+              </p>
+              <p className="text-navy text-center text-sm mt-2 noto-nastaliq-urdu" dir="rtl">
+                🔹 آپ کا دوسرا گھر – سکون، اعتماد اور سہولت کے ساتھ!
+              </p>
+            </div>
+            
             {/* Developer Credit */}
             <motion.div
               className="flex items-center gap-2 text-muted-foreground text-sm"
@@ -180,7 +190,7 @@ const Footer = () => {
               <span>Developed by</span>
               <a 
                 href="mailto:mwaleedkhalil@gmail.com"
-                className="text-gold hover:text-gold-light transition-colors font-medium hover:underline"
+                className="text-gold font-bold hover:text-gold font-bold-light transition-colors font-medium hover:underline"
               >
                 Muhammad Waleed Khalil - 0399648331
               </a>
@@ -190,7 +200,7 @@ const Footer = () => {
           {/* Scroll to Top Button */}
           <motion.button
             onClick={scrollToTop}
-            className="glass-strong p-3 rounded-full border-luxury text-gold hover:text-navy-deep transition-all duration-300 group"
+            className="glass-strong p-3 rounded-full border-luxury text-gold font-bold hover:text-navy-deep transition-all duration-300 group"
             whileHover={{ scale: 1.05, y: -1 }}
             whileTap={{ scale: 0.98 }}
             aria-label="Scroll to top"

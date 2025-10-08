@@ -21,7 +21,7 @@ export const generateHotelSchema = () => ({
     "latitude": "34.0151",
     "longitude": "71.5805"
   },
-  "telephone": "+92-21-1234567",
+  "telephone": "0300-5819858",
   "email": "info@hotelmehran.com",
   "url": "https://www.hotelmehran.com",
   "priceRange": "Rs 1,600-5,000",
@@ -117,8 +117,6 @@ export const generateHotelSchema = () => ({
           },
           "amenityFeature": [
             "Free WiFi",
-            "Air Conditioning",
-            "Mini Bar",
             "Room Service",
             "Daily Housekeeping",
             "City View"
@@ -139,8 +137,7 @@ export const generateHotelSchema = () => ({
           },
           "amenityFeature": [
             "Free WiFi",
-            "Air Conditioning",
-            "Mini Bar",
+         
             "Room Service",
             "Daily Housekeeping",
             "City View",
@@ -163,12 +160,12 @@ export const generateHotelSchema = () => ({
           "amenityFeature": [
             "Free WiFi",
             "Air Conditioning",
-            "Mini Bar",
+           
             "Room Service",
             "Daily Housekeeping",
             "City View",
             "Balcony",
-            "Kitchenette"
+          
           ]
         },
         "price": "5000",
@@ -196,7 +193,7 @@ export const generateLocalBusinessSchema = () => ({
   "name": "Mehran Hotel",
   "description": "7-star luxury hotel in Peshawar offering premium accommodations and world-class service",
   "url": "https://www.hotelmehran.com",
-  "telephone": "+92-21-1234567",
+  "telephone": "0300-5819858",
   "email": "info@hotelmehran.com",
   "address": {
     "@type": "PostalAddress",
@@ -252,7 +249,7 @@ export const generateOrganizationSchema = () => ({
   },
   "contactPoint": {
     "@type": "ContactPoint",
-    "telephone": "+92-21-1234567",
+    "telephone": "0300-5819858",
     "contactType": "customer service",
     "email": "info@hotelmehran.com",
     "availableLanguage": ["English", "Urdu", "Pashto"]

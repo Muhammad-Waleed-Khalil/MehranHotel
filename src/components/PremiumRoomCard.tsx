@@ -58,12 +58,12 @@ const PremiumRoomCard = ({
           />
           
           {/* Bottom ribbon (subtitle + 'Luxury Suite') */}
-          <div className="absolute bottom-0 left-0 right-0 bg-black/70 backdrop-blur-sm p-4">
+          <div className="absolute bottom-0 left-0 right-0 bg-white/90 backdrop-blur-sm p-4">
             <div className="text-center">
-              <h3 className="font-serif text-lg font-bold text-cream mb-1">
+              <h3 className="font-serif text-lg font-bold text-navy mb-1">
                 {subtitle}
               </h3>
-              <p className="text-cream text-xs font-medium">
+              <p className="text-navy text-xs font-medium">
                 Luxury Suite
               </p>
             </div>
@@ -74,7 +74,7 @@ const PremiumRoomCard = ({
             <div className="absolute top-4 left-4 z-20">
               <div className="bg-gold/90 backdrop-blur-sm rounded-lg px-3 py-1 flex items-center gap-1">
                 <Crown className="text-navy-deep" size={14} />
-                <span className="text-navy-deep font-semibold text-xs">Premium</span>
+                <span className="text-white font-semibold text-xs">Premium</span>
               </div>
             </div>
           )}
@@ -82,15 +82,15 @@ const PremiumRoomCard = ({
           {/* Price Badge */}
           <div className="absolute top-4 right-4 z-20">
             <div className="bg-black/80 backdrop-blur-sm rounded-lg p-3 text-center">
-              <div className="text-gold font-bold text-lg transition-colors duration-300 group-hover:text-gray-900">
+              <div className="text-white font-bold font-bold text-lg transition-colors duration-300 group-hover:text-white">
                 PKR {price.toLocaleString()}
               </div>
               {originalPrice && (
-                <div className="text-cream-dark text-xs line-through transition-colors duration-300 group-hover:text-gray-800">
+                <div className="text-white text-xs line-through transition-colors duration-300 group-hover:text-white">
                   PKR {originalPrice.toLocaleString()}
                 </div>
               )}
-              <div className="text-cream text-xs transition-colors duration-300 group-hover:text-gray-800">
+              <div className="text-white text-xs transition-colors duration-300 group-hover:text-white">
                 per night
               </div>
             </div>
@@ -102,25 +102,25 @@ const PremiumRoomCard = ({
           {/* Hover Content */}
           <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6">
             <div className="text-center">
-              <h4 className="font-serif text-xl font-bold text-cream mb-4 transition-colors duration-300 group-hover:text-gray-900">
+              <h4 className="font-serif text-xl font-bold text-navy mb-4 transition-colors duration-300 group-hover:text-navy-dark">
                 {title}
               </h4>
               
               {/* Room Info */}
               <div className="flex items-center justify-center gap-6 mb-4">
-                <div className="flex items-center gap-2 text-cream transition-colors duration-300 group-hover:text-gray-900">
-                  <Bed size={16} className="text-gold" />
+                <div className="flex items-center gap-2 text-navy transition-colors duration-300 group-hover:text-navy-dark">
+                  <Bed size={16} className="text-gold font-bold" />
                   <span className="text-sm">{beds} Bed{beds > 1 ? 's' : ''}</span>
                 </div>
-                <div className="flex items-center gap-2 text-cream transition-colors duration-300 group-hover:text-gray-900">
-                  <Users size={16} className="text-gold" />
+                <div className="flex items-center gap-2 text-navy transition-colors duration-300 group-hover:text-navy-dark">
+                  <Users size={16} className="text-gold font-bold" />
                   <span className="text-sm">{guests} Guest{guests > 1 ? 's' : ''}</span>
                 </div>
               </div>
 
               {/* Key Features */}
               <div className="mb-6">
-                <div className="grid grid-cols-2 gap-2 text-sm text-cream transition-colors duration-300 group-hover:text-gray-900">
+                <div className="grid grid-cols-2 gap-2 text-sm text-navy transition-colors duration-300 group-hover:text-navy-dark">
                   {features.slice(0, 4).map((feature, index) => (
                     <div key={index} className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0" />
@@ -133,7 +133,7 @@ const PremiumRoomCard = ({
               {/* Book Button */}
               <motion.button
                 onClick={() => navigate('/contact')}
-                className="bg-gold hover:bg-gold-light text-navy-deep hover:text-black font-semibold px-6 py-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl text-center"
+                className="bg-gold hover:bg-gold-light text-white hover:text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl text-center"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >

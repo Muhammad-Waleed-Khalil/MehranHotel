@@ -79,12 +79,12 @@ const ContactForm = () => {
           name="name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-gold font-medium">Name</FormLabel>
+              <FormLabel className="text-gold font-bold font-medium">Name</FormLabel>
               <FormControl>
                 <Input
                   placeholder="Your name"
                   {...field}
-                  className="glass border-gold/30 focus:border-gold text-cream placeholder:text-muted-foreground transition-colors bg-navy/30"
+                  className="glass border-gold/30 focus:border-gold text-navy placeholder:text-muted-foreground transition-colors bg-white/50"
                 />
               </FormControl>
               <FormMessage />
@@ -97,13 +97,13 @@ const ContactForm = () => {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-gold font-medium">Email</FormLabel>
+              <FormLabel className="text-gold font-bold font-medium">Email</FormLabel>
               <FormControl>
                 <Input
                   type="email"
                   placeholder="your.email@example.com"
                   {...field}
-                  className="glass border-gold/30 focus:border-gold text-cream placeholder:text-muted-foreground transition-colors bg-navy/30"
+                  className="glass border-gold/30 focus:border-gold text-navy placeholder:text-muted-foreground transition-colors bg-white/50"
                 />
               </FormControl>
               <FormMessage />
@@ -116,13 +116,13 @@ const ContactForm = () => {
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-gold font-medium">Message</FormLabel>
+              <FormLabel className="text-gold font-bold font-medium">Message</FormLabel>
               <FormControl>
                 <Textarea
                   placeholder="Tell us how we can help you..."
                   rows={5}
                   {...field}
-                  className="glass border-gold/30 focus:border-gold text-cream placeholder:text-muted-foreground transition-colors resize-none bg-navy/30"
+                  className="glass border-gold/30 focus:border-gold text-navy placeholder:text-muted-foreground transition-colors resize-none bg-white/50"
                 />
               </FormControl>
               <FormMessage />
@@ -133,7 +133,7 @@ const ContactForm = () => {
         <Button
           type="submit"
           disabled={isSubmitting}
-          className="w-full bg-gold hover:bg-gold-light text-navy-deep font-semibold py-6 rounded-full transition-all duration-300 shadow-[0_0_30px_rgba(230,184,77,0.4)] hover:shadow-[0_0_50px_rgba(230,184,77,0.6)]"
+          className="w-full bg-gold hover:bg-gold-light text-navy-deep hover:text-white font-semibold py-6 rounded-full transition-all duration-300 shadow-[0_0_30px_rgba(230,184,77,0.4)] hover:shadow-[0_0_50px_rgba(230,184,77,0.6)]"
         >
           {isSubmitting ? "Sending..." : "Send Message"}
         </Button>

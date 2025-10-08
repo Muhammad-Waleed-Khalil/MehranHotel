@@ -1,6 +1,9 @@
 /* Ultra-Luxury Typography */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+/* Noto Nastaliq Urdu Font for Urdu Text */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400..700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,70 +14,70 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Ultra-Luxury 7-Star Hotel Color Palette - Enhanced */
-    --background: 240 12% 2%; /* Deep onyx #050508 */
-    --foreground: 45 30% 96%; /* Warm ivory #F7F4ED */
+    /* Ultra-Luxury 7-Star Hotel Color Palette - White Theme */
+    --background: 0 0% 100%; /* Pure white #FFFFFF */
+    --foreground: 0 0% 0%; /* Pure black #000000 */
 
-    --card: 240 18% 5%; /* Rich charcoal #0D0D12 */
-    --card-foreground: 45 30% 96%;
+    --card: 0 0% 98%; /* Light gray #FAFAFA */
+    --card-foreground: 0 0% 0%;
 
-    --popover: 240 18% 7%;
-    --popover-foreground: 45 30% 96%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
 
-    --primary: 38 42% 68%; /* Refined gold #D4B574 */
-    --primary-foreground: 240 12% 2%;
+    --primary: 0 0% 0%; /* Pure black #000000 */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 240 18% 10%; /* Deep midnight #161620 */
-    --secondary-foreground: 38 42% 68%;
+    --secondary: 210 40% 25%; /* Deep blue #1E3A5F */
+    --secondary-foreground: 0 0% 0%;
 
-    --muted: 240 15% 15%;
-    --muted-foreground: 38 25% 78%; /* Soft champagne #D8C5A0 */
+    --muted: 0 0% 95%;
+    --muted-foreground: 0 0% 20%; /* Dark gray #333333 */
 
-    --accent: 38 30% 75%; /* Elegant platinum #B8A68A */
-    --accent-foreground: 240 12% 2%;
+    --accent: 210 40% 35%; /* Medium blue #2D4A6B */
+    --accent-foreground: 0 0% 0%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 45 30% 96%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 38 42% 68% / 0.15; /* Subtle gold border */
-    --input: 240 18% 10%;
-    --ring: 38 42% 68%;
+    --border: 0 0% 0% / 0.2; /* Black border */
+    --input: 0 0% 95%;
+    --ring: 0 0% 0%;
 
     --radius: 2rem;
 
-    /* Enhanced Ultra-Luxury color tokens */
-    --gold: 38 42% 68%; /* Refined gold #D4B574 */
-    --gold-light: 38 48% 78%; /* Bright gold #E6C884 */
-    --gold-dark: 38 35% 58%; /* Deep gold #B89A64 */
-    --gold-metallic: 38 35% 85%; /* Platinum #D1C4A8 */
+    /* Enhanced Ultra-Luxury color tokens - Black Theme */
+    --gold: 0 0% 0%; /* Pure black #000000 */
+    --gold-light: 0 0% 20%; /* Dark gray #333333 */
+    --gold-dark: 0 0% 0%; /* Pure black #000000 */
+    --gold-metallic: 0 0% 10%; /* Very dark gray #1A1A1A */
     
-    --navy: 240 18% 10%; /* Deep midnight #161620 */
-    --navy-deep: 240 12% 2%; /* Deep onyx #050508 */
-    --navy-light: 240 25% 18%; /* Soft navy #2A2A3A */
+    --navy: 210 40% 25%; /* Deep blue #1E3A5F */
+    --navy-deep: 210 50% 15%; /* Darker blue #0F1F2E */
+    --navy-light: 210 30% 40%; /* Medium blue #4A6B8A */
     
-    --cream: 45 30% 96%; /* Warm ivory #F7F4ED */
-    --cream-dark: 45 25% 88%; /* Soft cream #E8E0D0 */
+    --cream: 0 0% 100%; /* Pure white #FFFFFF */
+    --cream-dark: 0 0% 95%; /* Light gray #F2F2F2 */
     
     --white-pure: 0 0% 100%;
-    --dark-base: 240 12% 2%;
-    --dark-elevated: 240 18% 5%;
-    --glass-bg: 240 18% 7% / 0.85;
+    --dark-base: 0 0% 0%;
+    --dark-elevated: 0 0% 5%;
+    --glass-bg: 0 0% 100% / 0.85;
     
-    /* Enhanced Ultra-Luxury gradients */
-    --gradient-gold: linear-gradient(135deg, hsl(38 42% 68%), hsl(38 48% 78%));
-    --gradient-gold-radial: radial-gradient(circle at center, hsl(38 42% 68% / 0.12), transparent);
-    --gradient-navy: linear-gradient(180deg, hsl(240 12% 2%), hsl(240 18% 10%));
-    --gradient-luxury: linear-gradient(135deg, hsl(240 18% 10%), hsl(240 12% 2%), hsl(38 42% 68% / 0.08));
-    --gradient-marble: linear-gradient(45deg, hsl(240 12% 2%), hsl(240 18% 5%), hsl(45 30% 96% / 0.03));
-    --gradient-ambient: radial-gradient(ellipse at top, hsl(38 42% 68% / 0.15), transparent 70%);
+    /* Enhanced Ultra-Luxury gradients - Black Theme */
+    --gradient-gold: linear-gradient(135deg, hsl(0 0% 0%), hsl(0 0% 20%));
+    --gradient-gold-radial: radial-gradient(circle at center, hsl(0 0% 0% / 0.12), transparent);
+    --gradient-navy: linear-gradient(180deg, hsl(210 50% 15%), hsl(210 40% 25%));
+    --gradient-luxury: linear-gradient(135deg, hsl(210 40% 25%), hsl(0 0% 0%), hsl(0 0% 0% / 0.08));
+    --gradient-marble: linear-gradient(45deg, hsl(0 0% 0%), hsl(0 0% 5%), hsl(0 0% 100% / 0.03));
+    --gradient-ambient: radial-gradient(ellipse at top, hsl(0 0% 0% / 0.15), transparent 70%);
     
-    /* Enhanced Ultra-Luxury shadows */
-    --shadow-gold: 0 25px 80px -25px hsl(38 42% 68% / 0.35);
-    --shadow-gold-strong: 0 0 100px hsl(38 42% 68% / 0.25);
-    --shadow-elegant: 0 50px 150px -40px hsl(0 0% 0% / 0.85);
-    --shadow-navy: 0 30px 100px -30px hsl(240 12% 2% / 0.95);
-    --shadow-ambient: 0 0 120px hsl(38 42% 68% / 0.12);
-    --shadow-soft: 0 15px 50px -15px hsl(240 18% 5% / 0.6);
+    /* Enhanced Ultra-Luxury shadows - Black Theme */
+    --shadow-gold: 0 25px 80px -25px hsl(0 0% 0% / 0.35);
+    --shadow-gold-strong: 0 0 100px hsl(0 0% 0% / 0.25);
+    --shadow-elegant: 0 50px 150px -40px hsl(0 0% 0% / 0.15);
+    --shadow-navy: 0 30px 100px -30px hsl(210 50% 15% / 0.2);
+    --shadow-ambient: 0 0 120px hsl(0 0% 0% / 0.12);
+    --shadow-soft: 0 15px 50px -15px hsl(0 0% 0% / 0.1);
     
         /* Ultra-Luxury animations - Optimized for 60fps */
         --transition-smooth: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -117,25 +120,25 @@ h3 {
   letter-spacing: 0.02em;
 }
 
-/* Enhanced Ultra-Luxury Glassmorphism */
+/* Enhanced Ultra-Luxury Glassmorphism - Black Theme */
 .glass {
   background: hsl(var(--glass-bg));
   backdrop-filter: blur(25px) saturate(200%);
-  border: 1px solid hsl(var(--gold) / 0.12);
+  border: 1px solid hsl(var(--gold) / 0.3);
   box-shadow: var(--shadow-soft);
 }
 
 .glass-strong {
   background: hsl(var(--glass-bg) / 0.9);
   backdrop-filter: blur(35px) saturate(220%);
-  border: 1px solid hsl(var(--gold) / 0.18);
+  border: 1px solid hsl(var(--gold) / 0.4);
   box-shadow: var(--shadow-gold-strong);
 }
 
 .glass-premium {
   background: hsl(var(--glass-bg) / 0.95);
   backdrop-filter: blur(40px) saturate(250%);
-  border: 1px solid hsl(var(--gold) / 0.25);
+  border: 1px solid hsl(var(--gold) / 0.5);
   box-shadow: var(--shadow-elegant);
 }
 
@@ -157,12 +160,12 @@ h3 {
 }
 
 .border-luxury {
-  border: 1px solid hsl(var(--gold) / 0.2);
+  border: 1px solid hsl(var(--gold) / 0.4);
   transition: var(--transition-luxury);
 }
 
 .border-luxury:hover {
-  border-color: hsl(var(--gold) / 0.4);
+  border-color: hsl(var(--gold) / 0.6);
   box-shadow: var(--shadow-gold);
 }
 
@@ -300,4 +303,12 @@ h3 {
   overflow: visible;
   clip: auto;
   white-space: normal;
+}
+
+/* Urdu Font Class */
+.noto-nastaliq-urdu {
+  font-family: "Noto Nastaliq Urdu", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
